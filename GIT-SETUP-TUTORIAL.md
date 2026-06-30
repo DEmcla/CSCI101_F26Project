@@ -50,10 +50,14 @@ You now have your OWN copy of the project repository.
 So your instructor can read and review your Pull Requests:
 
 1. In your new repo, go to **Settings → Collaborators**.
-2. Click **"Add people"** and enter your instructor's GitHub username.
+2. Click **"Add people"** and enter your instructor's GitHub username:
+   **@INSTRUCTOR-HANDLE** (your instructor will confirm this in class / on Canvas).
 3. Your instructor will accept the invitation.
 
-This is the same way developers share a private repository in the real world.
+**Important:** the invitation **expires after 7 days**, and your instructor
+**cannot see or grade your work** until it's accepted. Send it in Week 1 and let
+your instructor know. This is the same way developers share a repository in the
+real world.
 
 ---
 
@@ -147,6 +151,11 @@ use worldwide, entirely in your own repository.
 **From here, every project stage is the same seven steps** — only the stage
 number changes (Stage 1 = PR 1, … Stage 6 = PR 6). See **SUBMISSION-RECIPE.md**
 for the full reference.
+
+> **One difference for graded stages:** you merged PR 00 yourself because it's
+> just practice. For the six graded stages, **open the Pull Request and leave it
+> open** — your instructor reviews it and merges it. Opening the PR by the
+> deadline is what counts as submitted.
 
 ---
 

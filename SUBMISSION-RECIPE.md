@@ -4,6 +4,16 @@
 
 Every stage of the Ethics in Technology project is submitted the same way: as a Pull Request **inside your own repository**. Once you have done it once (see *PR 00* below), every stage is the same seven steps — only the stage number changes. Bookmark this page.
 
+<div class="step">
+
+**Which guide do I use?** Three short docs, in order:
+
+- [GitHub Setup Guide](github-setup-guide.md) (Session 1) — install and configure Git, once.
+- [Git Setup Tutorial](GIT-SETUP-TUTORIAL.md) (Session 2) — the detailed PR 00 walkthrough, your first time through.
+- **This Submission Recipe** — your quick reference for every stage after that.
+
+</div>
+
 <div class="success">
 
 **You are not graded on Git mechanics.** Every stage's points are for the **content** of your work. If a submission has a mechanical problem — wrong branch name, missing folder, forgotten PR — you'll be asked to fix it, and it will **not** cost you content points. Getting the mechanics right is required to submit; it is not part of your grade.
@@ -16,7 +26,7 @@ Every stage of the Ethics in Technology project is submitted the same way: as a 
 
 1.  Set up Git and GitHub (see the [GitHub Setup Guide](github-setup-guide.md)). You're ready when `git --version`, `git config user.name`, and `git config user.email` all return values.
 2.  Create your own project repository from the course template: on **CSCI101_F26Project**, click **"Use this template" → "Create a new repository."** Name it `csci101-project-firstname-lastname`.
-3.  **Add your instructor as a collaborator:** your repo → Settings → Collaborators → add the instructor's GitHub username.
+3.  **Add your instructor as a collaborator** so they can review your work: your repo → Settings → Collaborators → add the instructor's GitHub username, **@INSTRUCTOR-HANDLE** (your instructor will confirm this in class / on Canvas). **Important:** the invite expires after 7 days, and your instructor cannot see or grade your work until it's accepted — so send it in Week 1 and let them know.
 4.  Clone your repo to your computer: `git clone <your-repo-URL>`
 
 </div>
@@ -50,7 +60,13 @@ Replace `#` with the stage number. That's the only thing that changes.
 4.  **Commit:** `git add stage# && git commit -m "Stage # - FirstName LastName"`
 5.  **Push:** `git push -u origin stage#`
 6.  **Open a Pull Request** on GitHub: base `main`, compare `stage#`
-7.  **Check the submission-check comment** is all green, then leave the PR open for your instructor to review (they will comment and merge)
+7.  **Check the submission-check comment** is all green, then leave the PR open for your instructor to review (they will comment and merge it)
+
+</div>
+
+<div class="success">
+
+**What counts as "submitted":** opening the Pull Request by the deadline. You do **not** merge your own stage PRs — leave them open; your instructor reviews and merges them. (The one exception is the no-points **PR 00** practice run, which you merge yourself.)
 
 </div>
 

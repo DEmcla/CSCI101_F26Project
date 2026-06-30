@@ -26,7 +26,7 @@ Every stage of the Ethics in Technology project is submitted the same way: as a 
 
 1.  Set up Git and GitHub (see the [GitHub Setup Guide](github-setup-guide.md)). You're ready when `git --version`, `git config user.name`, and `git config user.email` all return values.
 2.  Create your own project repository from the course template: on **CSCI101_F26Project**, click **"Use this template" → "Create a new repository."** Name it `csci101-project-firstname-lastname`.
-3.  **Add your instructor as a collaborator** so they can review your work: your repo → Settings → Collaborators → add the instructor's GitHub username, **@INSTRUCTOR-HANDLE** (your instructor will confirm this in class / on Canvas). **Important:** the invite expires after 7 days, and your instructor cannot see or grade your work until it's accepted — so send it in Week 1 and let them know.
+3.  **Add your instructor as a collaborator** so they can review your work: your repo → Settings → Collaborators → add the instructor's GitHub username, **@DEmcla** (your instructor will confirm this in class / on Canvas). **Important:** the invite expires after 7 days, and your instructor cannot see or grade your work until it's accepted — so send it in Week 1 and let them know.
 4.  Clone your repo to your computer: `git clone <your-repo-URL>`
 
 </div>

@@ -51,7 +51,7 @@ So your instructor can read and review your Pull Requests:
 
 1. In your new repo, go to **Settings → Collaborators**.
 2. Click **"Add people"** and enter your instructor's GitHub username:
-   **@INSTRUCTOR-HANDLE** (your instructor will confirm this in class / on Canvas).
+   **@DEmcla** (your instructor will confirm this in class / on Canvas).
 3. Your instructor will accept the invitation.
 
 **Important:** the invitation **expires after 7 days**, and your instructor

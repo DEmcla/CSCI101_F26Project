@@ -46,7 +46,7 @@ Strong written communication is essential in computer science, not just for code
 
 <div class="step">
 
-**How you submit:** Each stage is one Pull Request **inside your own project repository** (created from the `CSCI101_F26Project` template). The numbers line up directly: Stage 1 = PR 1, Stage 2 = PR 2, and so on through Stage 6. Every stage uses the same steps — see the [Submission Recipe](../SUBMISSION-RECIPE.md). There is no shared repository, no fork, and no `upstream` remote to manage.
+**How you submit:** Each stage is one Pull Request **inside your own project repository** (created from the `CSCI101_F26Project` template). The numbers line up directly: Stage 1 = PR 1, Stage 2 = PR 2, and so on through Stage 6. Every stage uses the same steps — see the [Submission Recipe](SUBMISSION-RECIPE.md). There is no shared repository, no fork, and no `upstream` remote to manage.
 
 </div>
 
@@ -56,7 +56,7 @@ Strong written communication is essential in computer science, not just for code
 
 1.  Complete the Week 1 GitHub setup (see `github-setup-guide.html`). You're ready when `git --version`, `git config user.name`, and `git config user.email` all return values without errors.
 2.  Create your own repository from the **CSCI101_F26Project** template ("Use this template"), and add your instructor as a collaborator.
-3.  Do **PR 00**, the zero-stakes practice run in the [Submission Recipe](../SUBMISSION-RECIPE.md), so your first graded submission isn't your first-ever Pull Request.
+3.  Do **PR 00**, the zero-stakes practice run in the [Submission Recipe](SUBMISSION-RECIPE.md), so your first graded submission isn't your first-ever Pull Request.
 
 </div>
 
@@ -72,7 +72,7 @@ This stage combines learning the GitHub Pull Request workflow with beginning you
 
 #### Instructions:
 
-1.  Make sure you've finished Week 1 setup and your PR 00 practice run (see the [Submission Recipe](../SUBMISSION-RECIPE.md))
+1.  Make sure you've finished Week 1 setup and your PR 00 practice run (see the [Submission Recipe](SUBMISSION-RECIPE.md))
 2.  Review the topic options below
 3.  Conduct 20–30 minutes of initial research on THREE topics that interest you
 4.  Create a Word document with your findings
@@ -119,7 +119,7 @@ The topics below are here to spark ideas, not to limit you. Proposing your own t
 
 #### Submission:
 
-Submit as **PR 1** on branch `stage1`, with your files in a `stage1/` folder — follow the [Submission Recipe](../SUBMISSION-RECIPE.md). Files for this stage:
+Submit as **PR 1** on branch `stage1`, with your files in a `stage1/` folder — follow the [Submission Recipe](SUBMISSION-RECIPE.md). Files for this stage:
 
 - `README.md` (note any AI-tool use here, per the academic integrity policy)
 - `ThreeTopics.docx` (your research document)
@@ -185,7 +185,7 @@ Submit as **PR 1** on branch `stage1`, with your files in a `stage1/` folder —
 
 #### Submission:
 
-Submit as **PR 2** on branch `stage2`, files in a `stage2/` folder — follow the [Submission Recipe](../SUBMISSION-RECIPE.md). Files for this stage:
+Submit as **PR 2** on branch `stage2`, files in a `stage2/` folder — follow the [Submission Recipe](SUBMISSION-RECIPE.md). Files for this stage:
 
 - `README.md`
 - `AnnotatedBibliography.docx` (or `.pdf`)
@@ -242,7 +242,7 @@ Organize your evidence and arguments into a logical structure before drafting.
 
 #### Submission:
 
-Submit as **PR 3** on branch `stage3`, files in a `stage3/` folder — follow the [Submission Recipe](../SUBMISSION-RECIPE.md). Files for this stage:
+Submit as **PR 3** on branch `stage3`, files in a `stage3/` folder — follow the [Submission Recipe](SUBMISSION-RECIPE.md). Files for this stage:
 
 - `README.md`
 - `Outline.docx` (or `.pdf`)
@@ -280,7 +280,7 @@ Transform your outline into a full draft with complete paragraphs and proper cit
 
 #### Submission:
 
-Submit as **PR 4** on branch `stage4`, files in a `stage4/` folder — follow the [Submission Recipe](../SUBMISSION-RECIPE.md). Files for this stage:
+Submit as **PR 4** on branch `stage4`, files in a `stage4/` folder — follow the [Submission Recipe](SUBMISSION-RECIPE.md). Files for this stage:
 
 - `README.md`
 - `FirstDraft.docx`
@@ -329,7 +329,7 @@ Give and receive constructive feedback, then demonstrate your ability to revise 
 
 #### Submission:
 
-Submit as **PR 5** on branch `stage5`, files in a `stage5/` folder — follow the [Submission Recipe](../SUBMISSION-RECIPE.md). Files for this stage:
+Submit as **PR 5** on branch `stage5`, files in a `stage5/` folder — follow the [Submission Recipe](SUBMISSION-RECIPE.md). Files for this stage:
 
 - `README.md`
 - `PeerReview.docx`
@@ -382,7 +382,7 @@ Produce a polished, professional research paper and prepare materials for your o
 
 #### Submission:
 
-Submit as **PR 6** on branch `stage6`, files in a `stage6/` folder — follow the [Submission Recipe](../SUBMISSION-RECIPE.md). Files for this stage:
+Submit as **PR 6** on branch `stage6`, files in a `stage6/` folder — follow the [Submission Recipe](SUBMISSION-RECIPE.md). Files for this stage:
 
 - `README.md`
 - `FinalPaper.docx` (or `.pdf`)
@@ -524,7 +524,7 @@ Project Timeline Summary
 
 ## Git Quick Reference
 
-You work entirely inside **your own** project repository (created from the `CSCI101_F26Project` template). No fork, no `upstream` remote. For the full walkthrough, see the [Submission Recipe](../SUBMISSION-RECIPE.md). Replace `#` with the stage number.
+You work entirely inside **your own** project repository (created from the `CSCI101_F26Project` template). No fork, no `upstream` remote. For the full walkthrough, see the [Submission Recipe](SUBMISSION-RECIPE.md). Replace `#` with the stage number.
 
 ### For Each Stage:
 

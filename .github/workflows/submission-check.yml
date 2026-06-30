@@ -1,0 +1,88 @@
+name: Submission check
+
+# Advisory only: this workflow NEVER fails a PR or blocks a merge.
+# It posts a friendly comment confirming the branch and folder are named
+# correctly. Students are not graded on Git mechanics.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check naming and post comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const branch = context.payload.pull_request.head.ref;
+            const base = context.payload.pull_request.base.ref;
+
+            // Expected branch names: pr00 (practice) or stage1..stage6
+            const valid = /^(pr00|stage[1-6])$/;
+            const expectedFolder = branch; // folder name mirrors the branch
+
+            // Files changed in this PR
+            const files = await github.paginate(
+              github.rest.pulls.listFiles,
+              { owner: context.repo.owner, repo: context.repo.repo, pull_number: context.payload.pull_request.number }
+            );
+            const paths = files.map(f => f.filename);
+
+            const checks = [];
+
+            // 1. Branch name
+            if (valid.test(branch)) {
+              checks.push(`✅ Branch name \`${branch}\` looks right.`);
+            } else {
+              checks.push(`⚠️ Branch name \`${branch}\` isn't one I recognize. Use \`pr00\` or \`stage1\`–\`stage6\`. (See the Submission Recipe, step 2.)`);
+            }
+
+            // 2. Base branch
+            if (base === 'main') {
+              checks.push('✅ Pull Request targets `main`.');
+            } else {
+              checks.push(`⚠️ This PR targets \`${base}\`, but it should target \`main\`.`);
+            }
+
+            // 3. Files live in the matching folder
+            if (valid.test(branch)) {
+              const inFolder = paths.some(p => p.startsWith(`${expectedFolder}/`));
+              if (inFolder) {
+                checks.push(`✅ Your files are in the \`${expectedFolder}/\` folder.`);
+              } else {
+                checks.push(`⚠️ I don't see files in a \`${expectedFolder}/\` folder. Put your deliverables there (Recipe, step 3).`);
+              }
+            }
+
+            const allGood = checks.every(c => c.startsWith('✅'));
+            const header = allGood
+              ? '### ✅ Submission check: looks good!\nNice work — the mechanics are all in order. Your instructor will review the content.'
+              : "### Submission check\nAlmost there! A couple of mechanical things to tidy up. **This doesn't affect your grade** — just fix and push again.";
+
+            const body = [header, '', ...checks.map(c => `- ${c}`), '',
+              '_This check is advisory only and never blocks your work. See the [Submission Recipe](../blob/main/SUBMISSION-RECIPE.md)._'
+            ].join('\n');
+
+            // Update our previous comment if present, else create one
+            const marker = '<!-- submission-check -->';
+            const comments = await github.paginate(
+              github.rest.issues.listComments,
+              { owner: context.repo.owner, repo: context.repo.repo, issue_number: context.payload.pull_request.number }
+            );
+            const mine = comments.find(c => c.body && c.body.includes(marker));
+            const fullBody = `${marker}\n${body}`;
+            if (mine) {
+              await github.rest.issues.updateComment({ owner: context.repo.owner, repo: context.repo.repo, comment_id: mine.id, body: fullBody });
+            } else {
+              await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: context.payload.pull_request.number, body: fullBody });
+            }

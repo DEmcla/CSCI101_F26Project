@@ -69,8 +69,9 @@ jobs:
               ? '### ✅ Submission check: looks good!\nNice work — the mechanics are all in order. Your instructor will review the content.'
               : "### Submission check\nAlmost there! A couple of mechanical things to tidy up. **This doesn't affect your grade** — just fix and push again.";
 
+            const recipeUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/blob/main/SUBMISSION-RECIPE.md`;
             const body = [header, '', ...checks.map(c => `- ${c}`), '',
-              '_This check is advisory only and never blocks your work. See the [Submission Recipe](../blob/main/SUBMISSION-RECIPE.md)._'
+              `_This check is advisory only and never blocks your work. See the [Submission Recipe](${recipeUrl})._`
             ].join('\n');
 
             // Update our previous comment if present, else create one
